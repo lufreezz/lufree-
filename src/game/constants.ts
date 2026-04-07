@@ -16,20 +16,50 @@ export const COLORS = {
 };
 
 export enum WeaponType {
-  Blaster = 'Blaster',
+  Basic = 'Basic',
+  Rapid = 'Rapid',
   Spread = 'Spread',
   Laser = 'Laser',
-  Homing = 'Homing',
-  Plasma = 'Plasma', // Replaces Wave
+  Missile = 'Missile',
+  Plasma = 'Plasma',
+  Wave = 'Wave',
+  Blade = 'Blade',
+  Boomerang = 'Boomerang',
+  Sniper = 'Sniper',
+}
+
+export enum CharacterType {
+  Green = 'Green',
+  Red = 'Red',
+  Yellow = 'Yellow',
+  Blue = 'Blue',
 }
 
 export const WEAPONS = [
-  WeaponType.Blaster,
+  WeaponType.Basic,
+  WeaponType.Rapid,
   WeaponType.Spread,
   WeaponType.Laser,
-  WeaponType.Homing,
+  WeaponType.Missile,
   WeaponType.Plasma,
+  WeaponType.Wave,
+  WeaponType.Blade,
+  WeaponType.Boomerang,
+  WeaponType.Sniper,
 ];
+
+export const WEAPON_NAMES: Record<WeaponType, string> = {
+  [WeaponType.Basic]: '基础弹',
+  [WeaponType.Rapid]: '连射炮',
+  [WeaponType.Spread]: '散弹枪',
+  [WeaponType.Laser]: '激光束',
+  [WeaponType.Missile]: '追踪弹',
+  [WeaponType.Plasma]: '等离子',
+  [WeaponType.Wave]: '波动炮',
+  [WeaponType.Blade]: '光刃',
+  [WeaponType.Boomerang]: '回旋镖',
+  [WeaponType.Sniper]: '狙击枪',
+};
 
 export enum ItemType {
   PowerUp = 'P',
